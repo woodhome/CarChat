@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo</string>
+
+    <!-- 通用 -->
+    <string name="tip">提示</string>
+    <string name="setnick">设置昵称</string>
+    <string name="inputnick">输入昵称</string>
+    <string name="pwdinputtip">请输入密码</string>
+    <string name="deleteconfirm">确定删除？</string>
+    <string name="btnok">确定</string>
+    <string name="btncancle">取消</string>
+    <string name="groupname">频道名称</string>
+    <string name="groupcomment">输入频道介绍</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="titletextsize">30px</dimen>
+	<dimen name="vediosettingitemheight">330px</dimen>
+	<dimen name="vediosettingitemwidth">300px</dimen>
+	<dimen name="dogsettingitemheight">350px</dimen>
+	<dimen name="dogsettingitemwidth">300px</dimen>
+	<dimen name="selectspeediconlength">90px</dimen>
+	<dimen name="speedimageiconlength">70px</dimen>
+	<dimen name="statusiconwidth">30px</dimen>
+	<dimen name="statusiconheight">30px</dimen>
+	<dimen name="systemaboutitemheight">50px</dimen>
+	<dimen name="systemaboutitemtextsize">15sp</dimen>
+	<dimen name="mainpanelbigicontext">30px</dimen>
+	<dimen name="mainpanelbottomheight">50px</dimen>
+	<dimen name="mainpanelbottomwidth">60px</dimen>
+	<dimen name="accounttextsize">30px</dimen>
+	<dimen name="edogtypesettingtextsize">25px</dimen>
+	<dimen name="edogtypecheckingsize">40px</dimen>
+	<dimen name="backbtnbgsize">30px</dimen>
+</resources>

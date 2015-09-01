@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon_bg" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:text="@string/tip"
+        android:textColor="#1b1b1b"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+       	android:layout_centerHorizontal="true"
+       	android:layout_marginTop="20px"
+       	android:layout_marginLeft="10px"
+        android:text="您还未设置家庭地址，是否马上设置?"
+        android:textColor="#ff353e45"
+        android:textSize="20px" />
+
+    <RelativeLayout
+        android:layout_width="380px"
+        android:layout_height="60px"
+        android:layout_below="@id/content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnfirst"
+                android:layout_width="150px"
+                android:layout_height="50px"
+                android:background="@drawable/square_btn_selector"
+                android:text="@string/btncancle"
+                android:textColor="#ff353e45"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btnsecond"
+                android:layout_width="150px"
+                android:layout_height="50px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/square_btn_selector"
+                android:text="@string/btnok"
+                android:textColor="#ff0050ff"
+                android:textSize="25px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
