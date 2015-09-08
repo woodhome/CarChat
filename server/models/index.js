@@ -2,8 +2,8 @@ var fs        = require('fs')
     , path      = require('path')
     , Sequelize = require('sequelize')
     , lodash    = require('lodash')
-    , sequelize = new Sequelize('carke', 'root', 'root',{
-        host:'127.0.0.1',port:3307
+    , sequelize = new Sequelize('carchat', 'root', 'root',{
+        host:'127.0.0.1',port:3306
     })
     , db        = {}
 

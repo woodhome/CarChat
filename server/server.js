@@ -1,8 +1,14 @@
 var express = require('express')
     ,http = require('http')
     ,db = require('./models')
+    ,onlinelogger = require('onlinelogger')
+    ,morgan = require('morgan')
     ,router = require('./routes');
 var app = express();
+
+app.use(morgan("short",{stream:{write:function(str){
+    onlinelogger.logger.log('info','http',{detail:str});
+}}}));
 
 app.use(router);
 app.get('/', function(req, res){
@@ -10,12 +16,10 @@ app.get('/', function(req, res){
 });
 app.set('port',18080);
 
-db.sequelize.sync({force:false}).complete(function(err){
-    if(err){
-        throw err[0];
-    }else{
-        http.createServer(app).listen(app.get('port'), function(){
-            console.log('Express server listening on port ' + app.get('port'))
-        })
-    }
-});
+db.sequelize.sync({force:false}).then(function(){
+    http.createServer(app).listen(app.get('port'), function(){
+        onlinelogger.start(7706, {db: 'mongodb://@127.0.0.1:27017/carchat'});
+        onlinelogger.logger.log('info', 'started', {});
+    })
+}).catch(function(err){
+}).done();

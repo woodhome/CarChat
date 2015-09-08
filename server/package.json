@@ -15,6 +15,8 @@
 		"uuid-js":"*",
 		"crypto":"*",
         "baidupush":"*",
+        "onlinelogger":"*",
+        "morgan":"*",
         "xinge":"*"
     }
 }
